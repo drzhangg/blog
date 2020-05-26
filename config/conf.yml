@@ -3,4 +3,4 @@ mysql:
   password: password
   host: 47.103.9.218
   port: 5432
-  dbname: mydb
+  dbname: test
