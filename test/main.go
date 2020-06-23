@@ -1,14 +1,12 @@
-package config
+package main
 
 import (
+	"fmt"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
-	"log"
 )
 
-var Cfg YamlConfig
-
-type YamlConfig struct {
+type Test struct {
 	Pgsql `yaml:"pgsql"`
 }
 
@@ -20,12 +18,20 @@ type Pgsql struct {
 	Dbname   string `yaml:"dbname"`
 }
 
-func Config() YamlConfig {
-	var yamlConfig YamlConfig
-	file, err := ioutil.ReadFile("config/config.yml")
+func main() {
+	f, err := ioutil.ReadFile("../config/config.yml")
 	if err != nil {
-		log.Printf("yaml file get err: #%v", err)
+		fmt.Println(err)
+		return
 	}
-	yaml.Unmarshal(file, &yamlConfig)
-	return yamlConfig
+	fmt.Println(string(f))
+
+	var p Test
+	err = yaml.Unmarshal(f, &p)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println("p:", p)
 }
