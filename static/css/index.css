@@ -116,13 +116,21 @@ p {
     margin-inline-end: 0px;
 }
 
-.site-nav-toggle{
-    position:static;
-    float:right;
+.site-nav-toggle {
+    position: static;
+    float: right;
 }
 
-.site-nav-toggle{
+.site-nav-toggle {
     display: none;
-    position:absolute;
-    top:10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.site-nav-toggle button {
+    margin-top: 2px;
+    padding: 9px 10px;
+    background: transparent;
+    border: none;
 }
