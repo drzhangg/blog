@@ -12,7 +12,7 @@ func InitCron() {
 	fmt.Println("in------")
 
 	//每分钟提交一次代码
-	c.AddFunc("*/1 * * * ?", func() {
+	c.AddFunc("*/2 * * * ?", func() {
 		err := cmd.PushGithub("update")
 		if err != nil {
 			log.Println(err)
