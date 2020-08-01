@@ -69,7 +69,23 @@ a {
     width: 75%;
 }
 
-.logo-line-before i, .logo-line-after i{
+.logo-line-before i, .logo-line-after i {
+    position: relative;
+    display: block;
+    height: 2px;
+    background: #222222;
+}
+
+i {
+    font-style: italic;
+}
+
+.site-meta .site-title{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.site-title{
     
 }
 
