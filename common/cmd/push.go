@@ -12,6 +12,6 @@ func PushGithub(commit string) error {
 		log.Println(err)
 		return err
 	}
-	log.Println("执行完毕")
+	log.Println("github更新完毕")
 	return nil
 }
