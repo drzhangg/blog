@@ -94,3 +94,21 @@ i {
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
+.site-subtitle {
+    display: none;
+}
+
+.site-subtitle{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999999;
+}
+
+p{
+    margin: 0 0 2px 0;
+}
+
+p{
+    display: block;
+    
+}
