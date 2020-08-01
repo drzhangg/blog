@@ -153,3 +153,16 @@ button, input, optgroup, select, textarea {
     font: inherit;
     margin: 0;
 }
+
+.btn-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #555;
+    border-radius: 1px;
+    text-shadow: 0 0 black;
+}
+
+.btn-bar + .btn-bar {
+    margin-top: 4px;
+}
