@@ -80,12 +80,17 @@ i {
     font-style: italic;
 }
 
-.site-meta .site-title{
+.site-meta .site-title {
     font-size: 22px;
     font-weight: bolder;
 }
 
-.site-title{
-    
+.site-title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
