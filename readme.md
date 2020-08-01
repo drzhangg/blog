@@ -1,5 +1,5 @@
 
-后端技术栈：gin + gorm + postgrep + redis + elasticsearch
+后端技术栈：gin + gorm + mysql + redis + elasticsearch
 
 日志库：zap
 
