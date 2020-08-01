@@ -54,8 +54,18 @@
     border-bottom: none;
 }
 
-a{
+a {
     color: #555555;
-    
+    text-decoration: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    word-wrap: break-word;
+}
+
+.logo-line-before .logo-line-after {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 75%;
 }
 
