@@ -2,3 +2,9 @@
     position: relative;
     min-height: 100%;
 }
+
+.headband {
+    display: none;
+    height: 3px;
+    background: #222222;
+}
