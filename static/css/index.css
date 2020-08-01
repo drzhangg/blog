@@ -20,11 +20,18 @@
     width: 700px;
 }
 
-.header-inner:before,.header-inner:after {
+.header-inner:before, .header-inner:after {
     content: " ";
     display: table;
 }
 
-.header-inner:after{
+.header-inner:after {
     clear: both;
 }
+
+.site-meta {
+    float: left;
+    margin-left: -20px;
+    line-height: normal;
+}
+
