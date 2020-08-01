@@ -98,17 +98,20 @@ i {
     display: none;
 }
 
-.site-subtitle{
+.site-subtitle {
     margin-top: 10px;
     font-size: 13px;
     color: #999999;
 }
 
-p{
+p {
     margin: 0 0 2px 0;
 }
 
-p{
+p {
     display: block;
-    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
