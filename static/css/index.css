@@ -115,3 +115,14 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.site-nav-toggle{
+    position:static;
+    float:right;
+}
+
+.site-nav-toggle{
+    display: none;
+    position:absolute;
+    top:10px;
+}
