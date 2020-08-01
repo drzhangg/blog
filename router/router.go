@@ -8,7 +8,8 @@ import (
 func Run() {
 
 	r := gin.Default()
-	r.StaticFile("static","static/*")
+	r.Static("static","static/")
+	r.StaticFile("static","static/")
 	r.LoadHTMLGlob("static/view/*")
 
 	r.GET("/", index.Index)
