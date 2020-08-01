@@ -35,3 +35,19 @@
     line-height: normal;
 }
 
+.site-meta {
+    margin: 0;
+    text-align: left;
+}
+
+.site-meta .brand{
+    padding: 2px 1px;
+    background: none;
+}
+
+.brand{
+    position: relative;
+    display: inline-block;
+    color: #222222;
+}
+
