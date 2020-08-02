@@ -239,8 +239,14 @@ li {
     transition-delay: 0s;
 }
 
+.menu a:link {
+    color: black;
+    text-decoration: none;
+}
+
 .menu a:hover {
-    text-align: ;
+    color: blue;
+    text-decoration: blue;
 }
 
 a {
