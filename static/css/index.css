@@ -171,10 +171,112 @@ button, input, optgroup, select, textarea {
 
 }
 
-.site-nav{
-    display:block !important;
+.site-nav {
+    display: block !important;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
-    
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+nav {
+    display: block;
+}
+
+.menu {
+    float: right;
+    margin: 8px 0 0 0;
+}
+
+.menu {
+    margin-top: 20px;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu .menu-item {
+    margin: 0;
+}
+
+.menu .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+.menu .menu-item a {
+    padding: 0 10px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    transition-property: background;
+}
+
+.menu .menu-item a {
+    display: block;
+    font-size: 13px;
+    line-height: inherit;
+    border-bottom: 1px solid transparent;
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+a {
+    border-bottom-color: #ccc;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    word-wrap: break-word;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu .menu-item .fa {
+    margin-right: 5px;
+}
+
+.fa {
+    font-family: FontAwesome !important;
+}
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
