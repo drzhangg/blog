@@ -14,5 +14,7 @@ func Run() {
 
 	r.GET("/", index.Index)
 
+	r.POST()
+
 	r.Run(":8083")
 }
