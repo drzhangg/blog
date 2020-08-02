@@ -166,3 +166,15 @@ button, input, optgroup, select, textarea {
 .btn-bar + .btn-bar {
     margin-top: 4px;
 }
+
+@media (min-width: 992px) {
+
+}
+
+.site-nav{
+    display:block !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    
+}
