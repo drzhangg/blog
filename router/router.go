@@ -1,6 +1,7 @@
 package router
 
 import (
+	"blog/common/middlerware"
 	"blog/router/index"
 	"github.com/gin-gonic/gin"
 	"log"
@@ -9,13 +10,15 @@ import (
 func Run() {
 
 	r := gin.Default()
+
 	r.Static("static", "static/")
 	r.StaticFile("static", "static/")
 	r.LoadHTMLGlob("static/view/*")
 
 	r.GET("/", index.Index)
 
-	r.POST("/login", func(c *gin.Context) {
+	v1 := r.Group("", middlerware.Cors())
+	v1.POST("/login", func(c *gin.Context) {
 		var u = struct {
 			Username string `json:"username"`
 			Password string `json:"password"`
