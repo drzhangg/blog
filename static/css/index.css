@@ -239,6 +239,10 @@ li {
     transition-delay: 0s;
 }
 
+.menu a:hover {
+    text-align: ;
+}
+
 a {
     border-bottom-color: #ccc;
 }
@@ -268,10 +272,12 @@ a:-webkit-any-link {
 .fa {
     font-family: FontAwesome !important;
 }
+
 .fa-fw {
     width: 1.28571429em;
     text-align: center;
 }
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -279,4 +285,13 @@ a:-webkit-any-link {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-home:before {
+    content: "\f015";
+}
+
+
+.menu br {
+    display: none;
 }
