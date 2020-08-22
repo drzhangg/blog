@@ -15,3 +15,4 @@ func PushGithub(commit string) error {
 	log.Println("github更新完毕")
 	return nil
 }
+

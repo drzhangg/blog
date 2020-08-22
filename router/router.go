@@ -11,9 +11,9 @@ func Run() {
 
 	r := gin.Default()
 
-	r.Static("static", "static/")
-	r.StaticFile("static", "static/")
-	r.LoadHTMLGlob("static/view/*")
+	r.Static("/static/", "./static")
+	//r.StaticFile("static", "static/")
+	r.LoadHTMLGlob("views/*")
 
 	r.GET("/", index.Index)
 
