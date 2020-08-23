@@ -1,10 +1,8 @@
 package router
 
 import (
-	"blog/common/middlerware"
-	"blog/router/index"
+	"blog/controller"
 	"github.com/gin-gonic/gin"
-	"log"
 )
 
 func Run() {
@@ -12,23 +10,19 @@ func Run() {
 	r := gin.Default()
 
 	r.Static("/static/", "./static")
-	//r.StaticFile("static", "static/")
 	r.LoadHTMLGlob("views/*")
 
-	r.GET("/", index.Index)
+	r.GET("/", controller.IndexHandle)
+	r.GET("/category/", controller.CategoryList)
+	r.GET("/article/new/", controller.NewArticle)
+	r.POST("/article/submit/", controller.ArticleSubmit)
+	r.GET("/article/detail/", controller.ArticleDetail)
+	r.POST("/upload/file/", controller.UploadFile)
+	r.GET("/leave/new/", controller.LeaveNew)
+	r.GET("/about/me/", controller.AboutMe)
+	r.POST("/comment/submit/", controller.CommentSubmit)
+	r.POST("/leave/submit/", controller.LeaveSubmit)
 
-	v1 := r.Group("", middlerware.Cors())
-	v1.POST("/login", func(c *gin.Context) {
-		var u = struct {
-			Username string `json:"username"`
-			Password string `json:"password"`
-		}{}
-		if err := c.ShouldBindJSON(&u); err != nil {
-			log.Println(err)
-			return
-		}
-		log.Println("userinfo:", u)
-	})
 
 	r.Run(":8081")
 }
